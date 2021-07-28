@@ -1,0 +1,38 @@
+
+
+
+.header-area {
+    background-color: #264653;
+}
+.btn.bg-custom {
+    background-color: #E76F51;
+}
+.bg-custom {
+    background-color: #E76F51;
+}
+.p-color {
+    color: #E0E0E0;
+}
+.p-color-g {
+    color: gray;
+}
+.text-color {
+    color: #E76F51;
+}
+img.gray {
+    filter: grayscale(100%);
+}
+.hov:hover {
+    color: #fff;
+    background-color: #E76F51;
+}
+.hov {
+    border-radius: .25rem;
+    transition: .36s;
+    color: #E76F51;
+    background-color: #fff;
+    border: 1px solid #E76F51;
+}
+img.hei {
+    height: 262px;
+}
