@@ -36,3 +36,19 @@ img.gray {
 img.hei {
     height: 262px;
 }
+
+
+
+.form-area {
+    background-image: url('images/red-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input:focus,
+textarea:focus {
+    outline-width: 0;
+}
+textarea {
+    border-radius: 40px;
+}

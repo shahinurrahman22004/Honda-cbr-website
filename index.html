@@ -37,11 +37,45 @@
                                 <a class="nav-link text-white" href="#news">News</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#contact">Contact</a>
+                                <a class="nav-link text-white" href="#clint">Clints</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#form">Form</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#contact">contact</a>
                             </li>
                           </ul>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn bg-custom flot-end px-4 py-2 text-white fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Login
+                            </button>
+                          
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Login Now</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"   aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body mx-5">
+                                            <form action="#">
+                                                <input class="w-100 rounded-pill py-3 px-4 mb-3" type="text" placeholder="Your Full Name" name="" id="" required>
+                                                <input class="w-100 rounded-pill py-3 px-4 mb-2" type="email" name="" placeholder="Your Email" id="" required>
+                                                <div class="submt d-flex justify-content-center my-4">
+                                                    <button class="btn px-5 py-3 text-uppercase fs-5 rounded-pill text-white bg-custom fw-bold ">submit</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</   button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
-                    <button class="btn bg-custom flot-end px-4 py-2 text-white fw-bold">Login</button>
                 </div>
             </nav>
 
@@ -54,12 +88,12 @@
                             <p class="p-color">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn bg-custom px-4 py-2 text-white fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn bg-custom px-4 py-2 text-white fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal-1">
                             Purchase
                             </button>
                           
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -155,12 +189,12 @@
         <!-- News area end  -->
 
         <!-- Clints area start  -->
-        <section class="container my-5">
+        <section class="container my-5" id="clint">
             <div class="clint-title text-center mb-5">
                 <h1 class="fw-bold fs-1">Happy <span class="text-color">Clients says</span> </h1>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     <div class="card text-center  border border-2 pb-3">
                         <div class="clint-img d-flex justify-content-center py-5">
                             <img class="w-75" src="images/user-1.png" alt="">
@@ -184,7 +218,7 @@
                     </div>
                     
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     <div class="card text-center border border-2 pb-3">
                         <div class="clint-img d-flex justify-content-center py-5">
                             <img class="w-75" src="images/user-2.png" alt="">
@@ -304,11 +338,133 @@
             </div>
         </section>
         <!-- Question area end  -->
+
+        <!-- Form area start  -->
+        <section class="form-area my-5 py-5" id="form">
+            <div class="container">
+                <div class="form-title text-center py-5">
+                    <h1 class="fs-1 text-white fw-bold">BOOK A TEST RIDE</h1>
+                </div>
+    
+                <form action="#">
+                    <div class="row">
+                        <div class="col-md-4 my-3">
+                            <input class="w-100 rounded-pill py-3 px-4" type="text" name="" placeholder="Your Full Name" id="" required>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <input class="w-100 rounded-pill py-3 px-4" type="email" name="" placeholder="Email ID" id="" required>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <input class="w-100 rounded-pill py-3 px-4" type="tel" name="" placeholder="Mobile" id="" required>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <select class="px-4 py-3 rounded-pill w-100" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option class="text-capitalize" selected>Select Country</option>
+                                <option value="1">Country 1</option>
+                                <option value="1">Country 2</option>
+                                <option value="1">Country 3</option>
+                                <option value="1">Country 4</option>
+                                <option value="1">Country 5</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <select class="px-4 py-3 rounded-pill w-100" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option class="text-capitalize" selected>Select State</option>
+                                <option value="1">State 1</option>
+                                <option value="1">State 2</option>
+                                <option value="1">State 3</option>
+                                <option value="1">State 4</option>
+                                <option value="1">State 5</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <select class="px-4 py-3 rounded-pill w-100" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option class="text-capitalize" selected aria-required="">Select City</option>
+                                <option value="1">City 1</option>
+                                <option value="1">City 2</option>
+                                <option value="1">City 3</option>
+                                <option value="1">City 4</option>
+                                <option value="1">City 5</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <textarea class="w-100 px-5 py-4" placeholder="Remarks/Suggestions" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="submt d-flex justify-content-center my-4">
+                        <button class="btn px-5 py-3 text-uppercase fs-5 rounded-pill text-white fw-bold  bg-dark">submit</button>
+                    </div>
+                    
+                    
+                </form>
+            </div>
+            
+        </section>
+        <!-- Form area end  -->
+
+
+        <!-- Contact area start  -->
+        <section class="contact-area header-area py-5 my-4" id="contact">
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-md-3 mb-5">
+                        <h1 class="fs-2 text-white fw-bold text-uppercase pb-3">Honda CBR</h1>
+                        <p class="p-color"> <strong>HONDA CBR</strong> the most latgest bike store in the wold can serve you latest ulity of motorcycle soucan sell here your motorcycle it
+                        </p>
+
+                        <div class="support">
+                            <h5 class="p-color">FOR SUPPORT</h5>
+                            <h5 class="p-color">0131 0365 997 (Toll Free)</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <h2 class="text-white pb-3">QUICK LINK</h2>
+                        <ul>
+                            <li class="p-color pb-2" id="home" ><a class="p-color text-decoration-none fs-5" href="#">Home</a></li>
+                            <li class="p-color pb-2" id="shop" ><a class="p-color text-decoration-none fs-5" href="#">Shop</a></li>
+                            <li class="p-color pb-2" id="news" ><a class="p-color text-decoration-none fs-5" href="#">News</a></li>
+                            <li class="p-color pb-2" id="clint" ><a class="p-color text-decoration-none fs-5" href="#">Clints</a></li>
+                            <li class="p-color pb-2" id="form" ><a class="p-color text-decoration-none fs-5" href="#">Form</a></li>
+                            <li class="p-color" id="contact" ><a class="p-color text-decoration-none fs-5" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 text-white mb-5">
+                        <h2 class="pb-3">LATEST TWEET</h2>
+                        <p class="p-color"><strong>@Smith,</strong> the most latgest bike store in the wold can serve you 10 min ago</p>
+                        <p class="p-color pt-2"><strong>@Smith,</strong> the most latgest bike store in the wold can serve you 10 min ago</p>
+                        <p class="p-color pt-4"><strong>@Smith,</strong> the most latgest bike store in the wold can serve you 10 min ago</p>
+                    </div>
+                    <div class="col-md-3 text-white">
+                        <h2 class="pb-3">LATEST TWEET</h2>
+                        <div class="single-contact">
+                            <h5>Address</h5>
+                            <p>276 Jhilli Nogor, 4th folor, Momen Tower, Main Town, New Yourk
+                            </p>
+                        </div>
+                        <div class="single-contact">
+                            <h5>Phone</h5>
+                            <p>+880131036****
+                            </p>
+                            <p>+880131036****
+                            </p>
+                        </div>
+                        <div class="single-contact">
+                            <h5>Web</h5>
+                            <p class="p-color fs-5">shahinur02345@gmail.com</p>
+                            <a target="_block" class="p-color text-decoration-none fs-5" href="https://github.com/shahinurrahman22004">https://github.com <br> /shahinurrahman22004</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact area end  -->
     </main>
 
     <!-- Footer area start  -->
-    <footer class="container">
-
+    <footer class="footer-area m-0 py-1 bg-dark">
+        <div class="container">
+            <p class="p-color-g d-flex justify-content-center mt-2 align-items-center">© 2020 bike. All rights reserved</p>
+        </div>
     </footer>
     <!-- Footer area end  -->
 
